@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Nav</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin: auto;
+            background: pink;
+            align-items: center;
+            padding: 1rem;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+        }
+        i{
+            font-size: 2rem;
+        }
+        .sidebar{
+            width: 20%;
+            background-color: yellow;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transform: translateX(-100%);
+            transition: all 1s;
+            z-index: 222;
+        }
+        ol{
+            list-style: none;
+        }
+        .overlay{
+            background:rgba(0,0,0,0.6);
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            /* display: none; */
+            transform: translateX(-100%);
+            bottom: 0;
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body>
+        <nav>
+            <div class="manu">
+                <i class="bi bi-list"></i>
+            </div>
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+                <li>item4</li>
+            </ul>
+        </nav>
+        <div class="overlay"></div>
+        <div class="sidebar">
+            <button>Login</button>
+            <hr>
+            <ol>
+                <li>Store Locator</li>
+                <li>Track Order</li>
+                <li>Explore Menu</li>
+                <hr>
+                
+            </ol>
+            <ol>
+                <li>Item1</li>
+                <li>Item2</li>
+                <li>Item3</li>
+                <li>Item4</li>
+                <li>Item5</li>
+                <li>Item6</li>
+                <li>Item7</li>
+                <li>Item8</li>
+                <li>Item9</li>
+                <li>Item10</li>
+            </ol>
+        </div>
+        <script src="./app.js"></script>
+</body>
+</html>

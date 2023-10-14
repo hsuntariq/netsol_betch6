@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{padding: 0;margin: 0;}
+        h2{
+            background-color: red;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: absolute;
+            transition: all 0.7s;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <h2></h2> -->
+
+    <script>
+        let div = document.querySelector('h2')
+        window.addEventListener('mousemove',(e)=>{
+            // let dot = [];
+            const {clientX,clientY} = e;
+            // div.style.transform = `translate(${clientX}px,${clientY}px)`
+
+            let div = document.createElement('h2')
+            document.body.append(div);
+            div.style.transform = `translate(${clientX}px,${clientY}px)`
+
+        })
+    </script>
+
+</body>
+</html>
